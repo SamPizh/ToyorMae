@@ -1,0 +1,265 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+i {
+    color: black;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.5;
+    background: #fff;    
+    color: black;
+    font-size: 15px;
+
+}
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: #262626;
+    cursor: pointer;
+}
+.container {
+    width: 90%;
+    margin: auto;
+    max-width: 1100px;
+}
+
+.menu-btn {
+    display:absoute;
+    top:   20px;
+    right: 100px;
+
+    
+}
+
+/* Navigation */
+.main-nav {
+    display: flex;
+    align-items: center;
+    font-size: 13px;
+    height: 60px;
+    justify-content: space-between;
+    padding: 20px 0;
+
+}
+.main-nav ul {
+    display: flex;
+}
+.main-nav ul.main-menu {
+    flex: 1;
+    margin-left: 30px;
+}
+.main-nav ul li {
+    padding: 0 10px
+}
+.main-menu li a {
+    padding-bottom: 2px;
+}
+.main-menu  a:hover {
+    border-bottom: 2px solid #262626;
+}
+
+/*Surface */
+.Surface {
+    width: 100%;
+    height: 400px;
+    background: url('slip.jpg') no-repeat center center/cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+    padding-bottom: 50px;
+    margin-bottom: 20px;
+}
+.btn {
+    cursor: pointer;
+    display: inline-block;
+    border: 0;
+    padding: 10px 20px;
+    font-weight: bold;
+    font-size: 12px;
+    background: #000000;
+    color: #ffff;
+
+}
+.btn:hover {
+    opacity: 0.8;
+    text-decoration: underline;
+}
+.Surface h2 {
+    padding: 5px;
+}
+
+/* Cards */
+.cards {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
+    margin-bottom: 40px;
+
+}
+.cards img {
+    width: 100%;
+    margin-bottom: 10px;
+}
+.cards p {
+    margin-bottom: 10px;
+}
+.cards a {
+    text-transform: uppercase;
+    display: inline;
+    padding-top: 20px;
+    color: rgb(68, 68, 236);
+    font-weight: bold;
+}
+.cards i {
+    color: rgb(68, 68, 236);
+    margin-left: 5px;
+}
+.cards a:hover {
+    margin-right: 20px;
+    text-decoration: underline;
+}
+
+/* Xbox */
+
+.Xbox, .carbon {
+    width: 100%;
+    height: 400px;
+    background: url('slip.jpg') no-repeat center center/cover;
+    margin-bottom: 20px;
+    
+}
+.content {
+    width: 40%;
+    margin: 0px 0 0 30px;
+    padding-top: 50px;
+    
+}
+.content p {
+    margin: 10px 0 10px;
+}
+.content button {
+    text-transform: capitalize;
+    font-weight: bold;
+}
+
+
+/* Carbon */
+.carbon {
+    width: 100%;
+    height: 350px;
+    background: url('slip.jpg') no-repet center;
+}
+.carbon .content {
+    color: white;
+}
+.carbon .dark {
+    background-color: white;
+    color: darkgrey;
+}
+
+/* follow */
+.follow {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-top: 20px;
+    font-style: bold;
+    margin-bottom: 20px;
+}
+.follow * {
+    margin-right: 10px;
+}
+
+/* links */
+.footer {
+    background: #f2f2f2;
+    font-size: 13px;
+    color: #616161;
+    padding: 35px 0;
+}
+.links {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    align-items: flex-start;
+    justify-content: center;
+}
+.links li {
+    line-height: 2.5;
+}
+
+.links li:hover {
+    text-decoration: underline;
+}
+
+
+/*footer */
+.main-footer { 
+    
+    background: #f2f2f2;
+    font-size: 13px;
+    color: #616161;
+    padding: 35px 0;
+}
+
+.footerin {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 20px 0 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.footerin ul {
+    display: flex;
+    flex-wrap: wrap;
+
+}
+.footerin ul li {
+    margin-right: 20px;
+}
+
+.footerin ul li:hover {
+    text-decoration: underline;
+}
+
+
+@media(max-width: 700px) {
+    .content {
+        width: 85%;
+    } 
+
+    .cards {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .links {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media(max-width: 500px) {
+    .content {
+        width: 85%;
+    } 
+
+    .cards {
+        grid-template-columns: 1fr;
+    }
+
+    .links {
+        grid-template-columns: 1fr;
+    }
+
+}
